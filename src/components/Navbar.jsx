@@ -5,7 +5,7 @@ import SearchBar from "./SearchBar"
 
 export default function Navbar() {
     return (
-        <header className="flex h-20 w-full shrink-0 items-center px-4 md:px-6">
+        <header className="flex h-20 w-full shrink-0 items-center max-w-7xl mx-auto">
             <Sheet>
                 <SheetTrigger asChild>
                     <Button variant="outline" size="icon" className="lg:hidden">
@@ -15,7 +15,7 @@ export default function Navbar() {
                 </SheetTrigger>
                 <SheetContent side="left">
                     <Link href="#" className="mr-6 hidden lg:flex" prefetch={false}>
-                        <MountainIcon className="h-6 w-6" />
+                        <h1 className="font-bold text-xl tracking-tight text-pretty">Abhishek Khare</h1>
                         <span className="sr-only">Acme Inc</span>
                     </Link>
                     <div className="grid gap-2 py-6">
@@ -30,7 +30,7 @@ export default function Navbar() {
                 </SheetContent>
             </Sheet>
             <Link href="#" className="mr-6 hidden lg:flex" prefetch={false}>
-                <MountainIcon className="h-6 w-6" />
+                <h1 className="font-bold text-xl tracking-tight text-pretty">Abhishek Khare</h1>
                 <span className="sr-only">Acme Inc</span>
             </Link>
             <nav className="ml-auto hidden lg:flex gap-6">

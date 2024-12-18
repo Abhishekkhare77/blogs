@@ -1,16 +1,16 @@
 import Link from "next/link";
 import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
-        <section className="bg-gray-100 py-12 md:py-16 lg:py-20">
+        <section className="bg-gray-100 py-12 px-10 rounded-lg md:py-16 lg:py-20">
           <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16">
             <div>
               <img
-                src="/placeholder.svg"
+                src="https://img.freepik.com/free-photo/online-blog_53876-123696.jpg"
                 width={800}
                 height={500}
                 alt="Featured Post"
@@ -42,8 +42,8 @@ export default function Home() {
                 building modern web applications.
               </p>
               <Link
-                href="#"
-                className="inline-flex items-center gap-2 font-medium text-gray-900 hover:text-gray-700"
+                href="/blog/1"
+                className={buttonVariants()}
                 prefetch={false}
               >
                 Read More
@@ -56,18 +56,14 @@ export default function Home() {
           <div className="container mx-auto">
             <div className="flex items-center justify-between mb-8">
               <h2 className="text-2xl md:text-3xl font-bold">Recent Posts</h2>
-              <Link
-                href="#"
-                className="text-gray-900 hover:text-gray-700 font-medium"
-                prefetch={false}
-              >
+              <Link href="/blog" className={buttonVariants()} prefetch={false}>
                 View All
               </Link>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12 lg:gap-16">
               <div className="space-y-4">
                 <img
-                  src="/placeholder.svg"
+                  src="https://img.freepik.com/free-photo/online-blog_53876-123696.jpg"
                   width={600}
                   height={400}
                   alt="Post Image"
@@ -94,7 +90,7 @@ export default function Home() {
               </div>
               <div className="space-y-4">
                 <img
-                  src="/placeholder.svg"
+                  src="https://img.freepik.com/free-photo/online-blog_53876-123696.jpg"
                   width={600}
                   height={400}
                   alt="Post Image"
@@ -121,7 +117,7 @@ export default function Home() {
               </div>
               <div className="space-y-4">
                 <img
-                  src="/placeholder.svg"
+                  src="https://img.freepik.com/free-photo/online-blog_53876-123696.jpg"
                   width={600}
                   height={400}
                   alt="Post Image"
@@ -223,7 +219,7 @@ export default function Home() {
               <div className="space-y-4">
                 <div className="flex gap-4">
                   <img
-                    src="/placeholder.svg"
+                    src="https://img.freepik.com/free-photo/online-blog_53876-123696.jpg"
                     width={100}
                     height={100}
                     alt="Post Image"
@@ -243,7 +239,7 @@ export default function Home() {
                 </div>
                 <div className="flex gap-4">
                   <img
-                    src="/placeholder.svg"
+                    src="https://img.freepik.com/free-photo/online-blog_53876-123696.jpg"
                     width={100}
                     height={100}
                     alt="Post Image"
@@ -263,7 +259,7 @@ export default function Home() {
                 </div>
                 <div className="flex gap-4">
                   <img
-                    src="/placeholder.svg"
+                    src="https://img.freepik.com/free-photo/online-blog_53876-123696.jpg"
                     width={100}
                     height={100}
                     alt="Post Image"

@@ -3,7 +3,7 @@ import Link from "next/link"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 
-export default function Component() {
+export default function Page() {
     return (
         <div className="flex flex-col min-h-[100dvh]">
             <header className="bg-primary text-primary-foreground py-12 md:py-16 lg:py-20">
